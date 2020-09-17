@@ -2,6 +2,7 @@
 
 open System
 open System.IO
+open Shop
 
 let fileInputPath = @"D:\Visual Studio Project\FuncProg\FuncProg\File\master.txt"
 let fileOutPath = @"D:\Visual Studio Project\FuncProg\FuncProg\File\out.txt"
@@ -66,4 +67,20 @@ let lab3 (main) =
 
        printf "%d" (sumBtwMaxMin)
        0
+*)
+
+(*
+[<EntryPoint>]
+//Лаба 4
+//Объектно-ориентированное программирование и интерфейсы. 4. Магазин
+let lab4(main) =
+    let assistant = Assistant("Евгений Борисович")
+    
+    (assistant :> IOwner).Employ()
+    
+    assistant.StartWork()   
+    
+    let game = Game(4599)
+    assistant.SellItem game
+    0
 *)
