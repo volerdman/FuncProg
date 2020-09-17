@@ -5,14 +5,17 @@ open System.IO
 
 let fileInputPath = @"D:\Visual Studio Project\FuncProg\FuncProg\File\master.txt"
 let fileOutPath = @"D:\Visual Studio Project\FuncProg\FuncProg\File\out.txt"
-
+(*
+[<EntryPoint>]
 //Лаба 1
 //8. Для заданного списка слов найти слова, не содержащие буквы Е
 let lab1 (main) =
      let words = ["HELLO"; "HOW"; "ARE"; "YOU"; "PeTeR"]        
      words |> List.iter( fun i -> if  i.Contains('E') = false then printf "%s\n" i)        
      0
-
+*)
+(*
+[<EntryPoint>]
 //Лаба 2
 //11. В данном текстовом файле выделить каждое второе слово и найти самую часто встречающуюся в них букв
 let lab2(main) =
@@ -32,12 +35,14 @@ let lab2(main) =
     File.WriteAllLines(fileOutPath, lst)
     printf "%c %d\n" (fst mostFrequentChar ) (snd mostFrequentChar)        
     0       
+*)
+(*
 [<EntryPoint>]
 // Лаба 3
 //14. В массиве A найти сумму элементов, расположенных между минимальным и максимальным элементами массива.
 //Пример: для массива A[5]: 3 1 2 4 5 сумма получается равной 6.
 let lab3 (main) =
-       let mutable arr = [| 3; 1; 2; 4; 5; 3 |]
+       let mutable arr = [| 3; 1; 2; 4; 5; 1 |]
 
        let size = Array.length arr - 1
        let mutable indexOfMax = 0
@@ -61,3 +66,4 @@ let lab3 (main) =
 
        printf "%d" (sumBtwMaxMin)
        0
+*)
